@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+	font-family: Ubuntu,simHei,sans-serif;
+}
+body{
+	font-size:1.5rem;
+}
+#app{
+	margin: 0 auto;
+	/*max-width: 640px;*/
+}
+fieldset{
+	margin: 0 auto;
+	width: 640px;
+	padding: 20px;
+	border: 1px solid #ccc;
+}
+#create{
+	margin: 0 auto;
+}
+
+.form-group{
+	margin: 10px auto;
+}
+label{
+	margin-right: 5px;
+	display: inline-block;
+	width: 120px; 
+	text-align: right;
+}
+input{
+	border:1px solid #ccc;
+	height: 25px;
+	width: 100px;
+}
+select{height: 25px;}
+button{
+	background: #0a6;
+	border-radius: 3px;
+	border:1px solid #bbb;
+	color: #fff;
+	width: 60px;
+	height: 25px;
+	cursor: pointer;
+}
+
+table{
+	margin: 0 auto;	
+	width: 640px;
+}
+th,td{
+	border:1px solid #bbb;
+	padding: 5px 10px;
+}
+table,th,td{
+	border-collapse: collapse;
+
+}
+.text-center{
+	text-align: center;
+}
+table thead{
+	background: green;
+	color: #fff;
+}

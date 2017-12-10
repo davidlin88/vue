@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>从零开始学Vue</title>
+</head>
+<body>
+	<div id="vueInstance">
+		输入您的姓名: <input type="text" v-model="name">
+		{{name}}
+	</div>
+
+	<script src="http://cdn.jsdelivr.net/vue/1.0.16/vue.js"></script>
+	<script>
+		var V = new Vue({
+			el : '#vueInstance',
+			data : {
+				name : '_Appian'
+			}
+		});
+	</script>
+</body>
+</html>
