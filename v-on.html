@@ -13,7 +13,7 @@
             </p>
             <p>
                 <!--click事件使用内联语句-->
-                <button v-on:click="say('Hi')">Hi</button>
+                <button @click="say('Hi')">Hi</button>
             </p>
         </div>
     </body>
@@ -34,6 +34,6 @@
                     alert(msg)
                 }
             }
-        })
+        });
     </script>
 </html>
