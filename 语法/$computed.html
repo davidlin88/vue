@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>computed</title>
+</head>
+<body>
+	<div id="myApp">
+		<p>今年3月3日发卖的任天堂新一代主机Switch的价格是{{price}}円，
+		含税价格{{priceInTax}},折合人民币{{priceInRMB}}。</p>
+	</div>
+	<script src="../vue.js"></script>
+	<script>
+		var myApp = new Vue({
+			el:'#myApp',
+			data:{
+				price:29980
+			},
+			computed:{
+				priceInTax:function(){
+					return this.price * 1.08;
+				},
+				priceInRMB:function(){
+					// Math.round() 返回一个四舍五入的整数
+					return Math.round(this.priceInTax / 16.75);
+				}
+			}
+		});
+	</script>
+</body>
+</html>
