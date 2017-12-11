@@ -1,5 +1,5 @@
 # vue学习笔记
-* `v-model`：双向数据绑定[ 实例](https:davidlin88.github.io/vue/v-model.html)
+* `v-model`：双向数据绑定[ 实例](https://davidlin88.github.io/vue/v-model.html)
 * `v-bind`：绑定属性，`v-bind:class:active`可简写为`:class:active`[ 实例](https:davidlin88.github.io/vue/v-bind.html)
 * `v-if`：为true时显示，为false不显示，html代码也不显示[ 实例](https:davidlin88.github.io/vue/v-if.html)
 * `v-show`：作用几乎同`v-if`[ 实例](https:davidlin88.github.io/vue/v-show.html)
