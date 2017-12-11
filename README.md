@@ -9,7 +9,7 @@ v-if 也是惰性的：如果在初始渲染时条件为假，则什么也不做
 一般来说，v-if 有更高的切换消耗而 v-show 有更高的初始渲染消耗。<br>因此，**如果需要频繁切换 v-show 较好，如果在运行时条件不大可能改变 v-if 较好。**
 * `v-for`:循环，可用于绑定数组的数据来渲染一个项目列表，获得循环项的索引：`v-for="(person,index) in perople"`，默认第一个参数为循环项，第二参数为索引值 [实例](https:davidlin88.github.io/vue/语法/v-for.html)
 * `v-on`:绑定事件监听器，`v-on:click="greet"`可简写为`@click="greet"`;在`methods`对象中定义方法，方法中的`this`指向所在的Vue实例或组件(https:davidlin88.github.io/vue/v-on.html)
-* `$component`:组件 [实例](https:davidlin88.github.io/vue/语法/$compenoent.html)
+* `$component`:组件 [实例](https://davidlin88.github.io/vue/语法/$compenoent.html)
 * `$computed`:计算属性，处理元数据，便于二次利用 [实例](https:davidlin88.github.io/vue/语法/$computed.html)
 * `$watch`:监听属性,用于监听变量的变化,然后进行相应的处理 [实例](https:davidlin88.github.io/vue/语法/$watch.html)
 * `getter`:计算属性`component`的值,`get:function(){...}`表示如何得到这个值
