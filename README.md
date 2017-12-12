@@ -16,6 +16,9 @@ v-if 也是惰性的：如果在初始渲染时条件为假，则什么也不做
 * 2.循环JS对象,把对象内容显示到页面上 [实例2](https:davidlin88.github.io/vue/语法/v-for2.html)
 ### v-on
 绑定事件监听器，`v-on:click="greet"`可简写为`@click="greet"`;在`methods`对象中定义方法，方法中的`this`指向所在的Vue实例或组件 [实例](https:davidlin88.github.io/vue/v-on.html)
+### v-bind
+* 绑定属性，可简写为`:`,如`:class={active:isActive}`,其中,当`isActive`位`true`时,给元素绑定active的类 [实例1](https:davidlin88.github.io/vue/语法/v-bind.html);
+* 绑定对象:`:class=myClass`,`myClass`是vue实例中data属性的一个子属性(对象) [实例2](https://davidlin88.github.io/vue/语法/v-bind2.html)
 ### $component
 组件 [实例](https://davidlin88.github.io/vue/语法/$compenoent.html)
 ### $computed
@@ -25,6 +28,3 @@ v-if 也是惰性的：如果在初始渲染时条件为假，则什么也不做
 ### $watch
 监听属性,用于监听变量的变化,然后进行相应的处理 [实例](https:davidlin88.github.io/vue/语法/$watch.html)
 [实例](https://davidlin88.github.io/vue/语法/getter和setter.html)
-### v-bind
-* 绑定属性，可简写为`:`,如`:class={active:isActive}`,其中,当`isActive`位`true`时,给元素绑定active的类 [实例1](https:davidlin88.github.io/vue/语法/v-bind.html);
-* 绑定对象:`:class=myClass`,`myClass`是vue实例中data属性的一个子属性(对象) [实例2](https://davidlin88.github.io/vue/语法/v-bind2.html)
