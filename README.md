@@ -5,7 +5,7 @@
 * `v-if`:判断vue.js的变量的值,执行页面渲染逻辑,即为true时显示(渲染)，为false不显示，html代码也不显示
 * `v-else-if`/`v-else`:用在`v-if`后,作用类似 [实例](https://davidlin88.github.io/vue/语法/v-if.html)
 ### v-show
-作用几乎同`v-if` [实例](https://davidlin88.github.io/vue/语法/v-show.html)
+显示效果与`v-if`类似,但其会显示html代码 [实例](https://davidlin88.github.io/vue/语法/v-show.html)
 > **`v-if`与`v-show`区别：**<br/>
   在切换 v-if 块时，Vue有一个局部编译/卸载过程，因为 v-if 之中的模板也可能包括数据绑定或子组件。v-if 是真实的条件渲染，因为它会确保条件块在切换当中合适地销毁与重建条件块内的事件监听器和子组件。<br>
 v-if 也是惰性的：如果在初始渲染时条件为假，则什么也不做——在条件第一次变为真时才开始局部编译（编译会被缓存起来）。
