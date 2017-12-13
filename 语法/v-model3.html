@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<div id="myApp">
+		<h1>表单单选框</h1>
+
+		<h3>选择性别</h3>
+		<input type="radio" id="male" value="男" v-model="pickedSex">
+		<label for="male">男</label>
+		<br>
+		<input type="radio" id="female" value="女" v-model="pickedSex">
+		<label for="female">女</label>
+
+		<h3>选择爱好</h3>
+		<input type="radio" id="game" value="打游戏" v-model="pickedHobby">
+		<label for="game">打游戏</label>
+		<br>
+		<input type="radio" id="music" value="听音乐" v-model="pickedHobby">
+		<label for="music">听音乐</label>
+
+		<h3>选择结果</h3>
+		<p>性别:{{ pickedSex }} </p>
+		<p>爱好:{{ pickedHobby }} </p>
+	</div>
+	<script src="../vue.js"></script>
+	<script>
+		var myApp = new Vue({
+			el:'#myApp',
+			data:{
+				pickedSex:'',
+				pickedHobby:''
+			}
+		});
+	</script>
+</body>
+</html>

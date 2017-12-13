@@ -4,17 +4,17 @@
 	<title>从零开始学Vue</title>
 </head>
 <body>
-	<div id="vueInstance">
-		输入您的姓名: <input type="text" v-model="name">
-		{{name}}
+	<div id="myApp">
+		<input type="text" v-model="name" placeholder="来啊,编辑我!">
+		<p>My name is {{name}}</p>
 	</div>
 
 	<script src="../vue.js"></script>
 	<script>
 		var V = new Vue({
-			el : '#vueInstance',
+			el : '#myApp',
 			data : {
-				name : '_Appian'
+				name : 'David'
 			}
 		});
 	</script>

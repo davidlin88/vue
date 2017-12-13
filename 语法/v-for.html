@@ -1,58 +1,29 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title></title>
 </head>
-<link rel="stylesheet" href="styles/vue.css" />
 <body>
-    <div id="app">
-        <table>
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Sex</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- person，即people数组的项 -->
-                <tr v-for="(person,index) in people">
-                    <td>{{ index+1  }}</td>
-                    <td>{{ person.name  }}</td>
-                    <td>{{ person.age  }}</td>
-                    <td>{{ person.sex  }}</td>
-                </tr>
-            </tbody>
-        </table>
+    <div id="myApp">
+        <ul>
+            <li v-for="(food,index) in foods">{{index + 1}} {{food.title}}
+            售价:{{food.price}}</li>
+        </ul>
     </div>
 </body>
 <script src="../vue.js"></script>
 <script>
-    var vm = new Vue({
-        el: '#app',
+    
+    var myApp = new Vue({
+        el: '#myApp',
         data: {
-            people: [{
-                name: 'Jack',
-                age: 30,
-                sex: 'Male'
-            }, {
-                name: 'Bill',
-                age: 26,
-                sex: 'Male'
-            }, {
-                name: 'Tracy',
-                age: 22,
-                sex: 'Female'
-            }, {
-                name: 'Chris',
-                age: 36,
-                sex: 'Male'
-            }]
-        }
-    })
+            foods:[
+            {title:"烤鸭",price:"15元"},
+            {title:"猪头肉",price:"14元"},
+            {title:"凤爪",price:"13元"}
+            ]
+        },
+    });
 </script>
-
 </html>

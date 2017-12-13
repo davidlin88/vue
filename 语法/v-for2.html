@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div id="myApp">
+        <h1>JS对象迭代</h1>
+        <div v-for="(value,key) in myFood">
+            {{ key }}:{{ value }} 
+        </div>
+        <div v-for="(item,index) in food">
+            {{ index+1 }}:{{ item.名字 }},卖{{item.价格}}
+        </div>
+    </div>
+</body>
+<script src="../vue.js"></script>
+<script>
+
+    var myApp = new Vue({
+        el: '#myApp',
+        data: {
+            myFood:{
+                名字:"烤鸭",
+                价格:"15元",
+                类型:"熟食",
+                味道:"炒鸡好吃!"
+            },
+            food:[
+            {名字:"烤鸭",价格:"15元"},
+            {名字:"猪头肉",价格:"14元"}
+            ]
+        },
+    });
+</script>
+</html>

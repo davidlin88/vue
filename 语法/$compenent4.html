@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<div id="myApp">
+		<div>今天的天气是:<today-weather/></div>
+	</div>
+	<script src="../vue.js"></script>
+	<script>
+		Vue.component('today-weather',{
+			template:'<strong>{{todayWeather}}</strong>',
+			data: function(){
+				return {
+					todayWeather:'糖果加软妹币'
+				};
+			}
+		});
+		var myApp = new Vue({
+			el: '#myApp'
+		});
+	</script>
+</body>
+</html>

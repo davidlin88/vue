@@ -11,12 +11,15 @@
 </div>
 <script src="../vue.js"></script>
 <script>
-	// 定义一个全局组件 today-weather
-	Vue.component('today-weather', {
-		template: '<div>今天下雨,出不去啦,干什么呢?做菜吧!</div>'
-	});
+	// 定义一个对象 today-weather
+	var WeatherCompenent = {
+		template:'<div>今天下雨,let it go~</div>'
+	};
 	var myApp = new Vue({
-		el: '#myApp'
+		el: '#myApp',
+		components:{
+			'today-weather':WeatherCompenent
+		}
 	});
 </script>
 </body>

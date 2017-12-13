@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<div id="myApp">
+		<h1>下拉菜单</h1>
+
+		<h3>你最喜欢的英雄</h3>
+		<select v-model="favoriteHero" style="width: 180px">
+			<option value="提莫队长">迅捷斥候-提莫</option>
+			<option value="艾希女皇">寒冰射手-艾希</option>
+			<option value="金克斯的含义就是金克斯">暴走萝莉-金克斯</option>
+		</select>
+
+		<h3>我拥有的英雄</h3>
+		<select v-model="gotHeros" multiple style="width: 180px;height: 100px;">
+			<option>德玛西亚之力-盖伦</option>
+			<option>德邦总管-赵信</option>
+			<option>德玛西亚皇子-嘉文四世</option>
+		</select>
+
+		<h3>选择结果</h3>
+		<p>我最喜欢的英雄:{{ favoriteHero }} </p>
+		<p>我拥有的英雄:{{ gotHeros }} </p>
+	</div>
+	<script src="../vue.js"></script>
+	<script>
+		var myApp = new Vue({
+			el:'#myApp',
+			data:{
+				favoriteHero:null,
+				gotHeros:[],
+			}
+		});
+	</script>
+</body>
+</html>

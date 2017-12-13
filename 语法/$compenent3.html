@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表格组件</title>
+</head>
+<body>
+	<div id="myApp">
+		<h1>2017年最火热的游戏是:</h1>
+		<table border="1">
+			<tr>
+				<td>编号</td>
+				<td>游戏名称</td>
+			</tr>
+			<tr is="my-row1"></tr>
+			<tr is="my-row2"></tr>
+			<tr is="my-row3"></tr>
+<!-- 			<my-row1></my-row1>
+			<my-row2></my-row2>
+			<my-row3></my-row3> -->
+		</table>
+	</div>
+</div>
+<script src="../vue.js"></script>
+<script>
+	Vue.component('my-row1',{
+		template:'<tr><td>(1)</td><td>绝地求生</td></tr>'
+	});
+	Vue.component('my-row2',{
+		template:'<tr><td>(2)</td><td>王者荣耀</td></tr>'
+	});
+	Vue.component('my-row3',{
+		template:'<tr><td>(2)</td><td>英雄联盟</td></tr>'
+	});
+	var myApp = new Vue({
+		el: '#myApp'
+	});
+</script>
+</body>
+</html>
