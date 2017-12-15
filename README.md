@@ -34,6 +34,10 @@ v-if 也是惰性的：如果在初始渲染时条件为假，则什么也不做
 * 组件可在`data`属性内添加数据函数,而非数据属性 [添加数据函数的组件实例](https://davidlin88.github.io/vue/语法/$compenoent4.html)
 * 组件可在`computed`属性接收参数;`props`定义组件能接收的参数 [接收参数的组件实例](https://davidlin88.github.io/vue/语法/$compenoent5.html)
 * 组件可传递变量数据,即与vue实例中的数据绑定 [传递变量数据的组件实例](https://davidlin88.github.io/vue/语法/$compenoent6.html)
+* 组件参数可在`props`中添加验证语法,为组件中接收到的变量进行逻辑验证 [组件的验证语法实例](https://davidlin88.github.io/vue/语法/$compenoent7.html) **疑问:为什么name前加:会报错?**
+* 组件的事件传递 [实例](https://davidlin88.github.io/vue/语法/$compenoent8.html)
+* `slot`是父组件与自组件的通讯方式,可以将父组件的内容显示到子组件中 [实例](https://davidlin88.github.io/vue/语法/$compenoent9.html)
+* 子组件中可通过为多个`slot`命名,来接受父组件不同内容的数据 [实例](https://davidlin88.github.io/vue/语法/$compenoent10.html)
 ### $computed
 * 计算属性，处理元数据，便于二次利用 [实例1](https:davidlin88.github.io/vue/语法/$computed.html)
 * `getter`:计算属性`component`的值,`get:function(){...}`表示如何得到这个值
