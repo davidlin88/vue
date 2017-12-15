@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<div id="myApp">
+		<recent-weather rain="微雨濛濛">
+			<span slot="sunshine">阳光明媚</span>
+			<span slot="dark-clouds">乌云压城</span>
+		</recent-weather>
+	</div>
+	<script src="../vue.js"></script>
+	<script>
+		Vue.component('recent-weather',{
+			props:['rain'],
+			template:'<div>'
+				+'<div>昨日<slot name="dark-clouds"></slot></slot>,</div>'
+				+'<div>今早{{rain}},</div>'
+				+'<div>愿明日<slot name="sunshine"></slot>.</div>'
+				+'</div>'
+		});
+		var myApp = new Vue({
+			el: '#myApp'
+		});
+	</script>
+</body>

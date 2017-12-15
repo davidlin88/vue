@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<div id="myApp">
+		<say-to pname="David">
+			JavaScript是世界上最好的语言.
+		</say-to>
+		<say-to pname="Mike">
+			NO,汉语 is the best language in the world!
+		</say-to>
+		<say-to pname="Tony">
+			PHP是世界上最好的语言!
+		</say-to>
+	</div>
+	<script src="../vue.js"></script>
+	<script>
+		Vue.component('say-to',{
+			props:['pname'],
+			template:'<div>'
+				+'<strong>{{pname}}:</strong>'
+				+'<slot></slot>'
+				+'</div>'
+		});
+		var myApp = new Vue({
+			el: '#myApp'
+		});
+	</script>
+</body>
