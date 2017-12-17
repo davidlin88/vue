@@ -1,4 +1,8 @@
 # vue学习笔记
+### v-text
+* 简写为`{{}}`,写作`v-text="msg"`的形式时,会将标签内所有内容替换为Vue实例中的msg数据 [实例](https://davidlin88.github.io/vue/语法/v-text.html)
+### v-html
+* 写作`v-html="msg"`的形式时,会将标签内所有内容替换为Vue实例中的msg数据,并以html形式解析 [实例](https://davidlin88.github.io/vue/语法/v-html.html)
 ### v-model
 * 为表单控件元素创建双向数据绑定,与输入框绑定: [实例1](https://davidlin88.github.io/vue/语法/v-model.html)
 * 与表单复选框绑定: [实例2](https://davidlin88.github.io/vue/语法/v-model2.html)
