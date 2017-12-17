@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>从零开始学Vue</title>
+</head>
+<body>
+	<div id="myApp">
+		<p v-html="name">467678678678</p>
+	</div>
+
+	<script src="../vue.js"></script>
+	<script>
+		var V = new Vue({
+			el : '#myApp',
+			data : {
+				name : 'David<i>88</i>'
+			}
+		});
+	</script>
+</body>
+</html>
