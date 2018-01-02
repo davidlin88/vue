@@ -32,20 +32,20 @@ v-if 也是惰性的：如果在初始渲染时条件为假，则什么也不做
 * 绑定属性，可简写为`:`,如`:class={active:isActive}`,其中,当`isActive`位`true`时,给元素绑定active的类 [实例1](https:davidlin88.github.io/vue/语法/v-bind.html);
 * 绑定对象:`:class=myClass`,`myClass`是vue实例中data属性的一个子属性(对象) [实例2](https://davidlin88.github.io/vue/语法/v-bind2.html)
 ### 组件(component)
-* 组件注册要写在vue声明之前 [全局组件实例](https://davidlin88.github.io/vue/语法/$compenoent.html)
-* 注册局部组件 [局部组件实例](https://davidlin88.github.io/vue/语法/$compenoent2.html)
-* 制作表格组件时,不能直接添加新组件,要用`is`属性在原表格的基础上替换属性,如写`<tr is="my-row1"></tr>`而非`<my-row1></my-row1>`,否则组件无法添加进原表格内,而是在其上方 [表格组件实例](https://davidlin88.github.io/vue/语法/$compenoent3.html)
-* 组件可在`data`属性内添加数据函数,而非数据属性 [添加数据函数的组件实例](https://davidlin88.github.io/vue/语法/$compenoent4.html)
-* 组件可在`computed`属性接收参数;`props`定义组件能接收的参数 [接收参数的组件实例](https://davidlin88.github.io/vue/语法/$compenoent5.html)
-* 组件可传递变量数据,即与vue实例中的数据绑定 [传递变量数据的组件实例](https://davidlin88.github.io/vue/语法/$compenoent6.html)
-* 组件参数可在`props`中添加验证语法,为组件中接收到的变量进行逻辑验证 [组件的验证语法实例](https://davidlin88.github.io/vue/语法/$compenoent7.html) **疑问:为什么name前加:会报错?**
-* 组件的事件传递 [实例](https://davidlin88.github.io/vue/语法/$compenoent8.html)
-* `slot`是父组件与自组件的通讯方式,可以将父组件的内容显示到子组件中 [实例](https://davidlin88.github.io/vue/语法/$compenoent9.html)
-* 子组件中可通过为多个`slot`命名,来接受父组件不同内容的数据 [实例](https://davidlin88.github.io/vue/语法/$compenoent10.html)
+* 组件注册要写在vue声明之前 [全局组件实例](https://davidlin88.github.io/vue/语法/$component.html)
+* 注册局部组件 [局部组件实例](https://davidlin88.github.io/vue/语法/$component2.html)
+* 制作表格组件时,不能直接添加新组件,要用`is`属性在原表格的基础上替换属性,如写`<tr is="my-row1"></tr>`而非`<my-row1></my-row1>`,否则组件无法添加进原表格内,而是在其上方 [表格组件实例](https://davidlin88.github.io/vue/语法/$component3.html)
+* 组件可在`data`属性内添加数据函数,而非数据属性 [添加数据函数的组件实例](https://davidlin88.github.io/vue/语法/$component4.html)
+* 组件可在`computed`属性接收参数;`props`定义组件能接收的参数 [接收参数的组件实例](https://davidlin88.github.io/vue/语法/$component5.html)
+* 组件可传递变量数据,即与vue实例中的数据绑定 [传递变量数据的组件实例](https://davidlin88.github.io/vue/语法/$component6.html)
+* 组件参数可在`props`中添加验证语法,为组件中接收到的变量进行逻辑验证 [组件的验证语法实例](https://davidlin88.github.io/vue/语法/$component7.html) **疑问:为什么name前加:会报错?**
+* 组件的事件传递 [实例](https://davidlin88.github.io/vue/语法/$component8.html)
+* `slot`是父组件与自组件的通讯方式,可以将父组件的内容显示到子组件中 [实例](https://davidlin88.github.io/vue/语法/$component9.html)
+* 子组件中可通过为多个`slot`命名,来接受父组件不同内容的数据 [实例](https://davidlin88.github.io/vue/语法/$component10.html)
 ### $computed
 * 计算属性，处理元数据，便于二次利用 [实例1](https:davidlin88.github.io/vue/语法/$computed.html)
 * `getter`:计算属性`component`的值,`get:function(){...}`表示如何得到这个值
 * `setter`:同样是计算属性的值,`set:function(value){...}`表示如何用这个变量的值给其他变量赋值
 [实例2](https://davidlin88.github.io/vue/语法/getter和setter.html)
 ### $watch
-* 监听属性,用于监听变量的变化,然后进行相应的处理 [实例](https:davidlin88.github.io/vue/语法/$watch.html)
+* 监听属性,用于监听变量的变化,然后进行相应的处理 [实例](https://davidlin88.github.io/vue/语法/$watch.html)
